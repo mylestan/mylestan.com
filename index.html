@@ -3,12 +3,13 @@
 <HTML>
    <HEAD>
       <TITLE>Myles Tan</TITLE>
+	  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 		<script type="text/javascript">
 			function writeText(txt){
 				var content;
 				if(txt == 'about')content = "<p>Hey, My name is Myles. I'm an Engineering Student at the University of Waterloo. I'm currently on my co-op term at NexJ Systems Inc.</p><p>This website is one of my pet projects. It's constantly under construction as I get through HTMl, CSS, and java script. I hope to have it updated at least once a week. If you have some time, stop by. Cheers!</p>";
 				if(txt == 'blog')content = "<p>Check out my <a href='http://www.taniard.tumblr.com' target='_blank'>blog</a>. I post thing I like on it.</p>";
-				if(txt == 'photos') content = "<p>I like to take photos! you can find my Flickr at www.flickr.com/photos/myles_tan</p>";
+				if(txt == 'photos') content = "<p>I like to take photos! you can find my photos on <a href='http://www.flickr.com/photos/myles_tan' target='_blank'>Flickr.</p>";
 				if(txt == 'resume') content = "<p>If you're interested in hiring me, or a brief list of things I use to validate my self-worth in this economy, you can find it <a href='Resume.html' target='_blank'>here</a>.</p>";
 				if(txt == 'contact') content = "<p>If you'd like to contact me, mylestan7@gmail.com will do the trick.</p>";
 				document.getElementById("content").innerHTML=content;
@@ -21,31 +22,31 @@
 			<div id = "title">
 				<h1>Myles Tan</h1>
 			</div>
-			<div id="main" style=width:600px;height:500px>
-				<div id="menu" style=float:left;width:100px>
-					<div id="icon" style=height:100px;text-align:center>
+			<div id="main">
+				<div id="menu">
+					<div id="icon">
 						<text onclick="writeText('about')">About me</text>
 					</div>
-					<div id="icon" style=height:100px;text-align:center>
+					<div id="icon">
 						<text onclick="writeText('blog')">Blog</text>
 						<!--<a href="http://www.taniard.tumblr.com" onclick="writeText('blog')" target="_blank">[Blog]</a>-->
 					</div>
-					<div id="icon" style=height:100px;text-align:center>
+					<div id="icon">
 						<text onclick="writeText('photos')">Photos</text>
 						<!--<a href="http://www.flickr.com/photos/myles_tan" target="_blank">[Photos]</a>-->
 					</div>
-					<div id="icon" style=height:100px;text-align:center>
+					<div id="icon">
 						<!--<a href="Resume.html" target="_blank">[Resume]</a>-->
 						<text onclick="writeText('resume')">Resume</text>
 					</div>
-					<div id="icon" style=height:100px;text-align:center>
+					<div id="icon">
 						<!--<a href="mailto:mylestan7@gmail.com">[Contact]</a>-->
 						<text onclick="writeText('contact')">Contact</text>
 					</div>
 				</div>
-				<div id="content" style=width:500px;float:right></div>
+				<div id="content"></div>
 			</div>
-			<div id="footer" style=clear:both;width:600;text-align:center>
+			<div id="footer">
 				<text>Work in progress. In case you didn't notice.</text>
 			</div>
 		</div>

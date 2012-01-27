@@ -1,0 +1,52 @@
+body {
+	border:dotted;
+	border-width:1px;
+	font-family: Georgia, Georgia, serif;
+	font-size:100%
+}
+h1{
+	border:dotted;
+	border-width:1px;
+	font-family:Georgia, Georgia, serif; 
+	font-size:2.5em;
+	text-transform:uppercase;
+}
+p{
+	border:dotted;
+	border-width:1px;
+	/*text-indent:50px;*/
+}
+div{
+	border:dotted;
+	border-width:1px;
+}
+
+#main{
+	width:600px;
+	height:500px;
+}
+
+#menu{
+	float:left;
+	width:98px;
+}
+
+#icon{
+	height:98px;
+	text-align:center;
+}
+
+#content{
+	width:498px;
+	float:right;
+}
+
+#footer{
+	clear:both;
+	width:600;
+	text-align:center;
+}
+/*set link colors*/
+a:link {color:#171717;}
+a:visited{color:#404040;}
+
