@@ -1,51 +1,64 @@
-body {
-	border:dotted;
-	border-width:1px;
+/*universal edits*/
+body, div, body, h1, p {
 	font-family: Georgia, Georgia, serif;
-	font-size:100%
+	padding:0px;
+	margin:0px;
+}
+
+/*class edits*/
+body {
+	font-size:100%;
 }
 h1{
-	border:dotted;
-	border-width:1px;
-	font-family:Georgia, Georgia, serif; 
-	font-size:2.5em;
+	border-bottom:thin solid #181818;
+	font-size:60px;
 	text-transform:uppercase;
 }
 p{
-	border:dotted;
-	border-width:1px;
-	/*text-indent:50px;*/
 }
 div{
-	border:dotted;
-	border-width:1px;
 }
 
+/*ID edits*/
 #main{
+	margin-top:10px;
 	width:600px;
 	height:500px;
 }
 
 #menu{
+	margin-right:25px;
 	float:left;
-	width:98px;
+	width:100px;
 }
 
 #icon{
-	height:98px;
+	height:100px;
 	text-align:center;
+	margin-bottom:5px;
 }
 
 #content{
-	width:498px;
+	width:475px;
 	float:right;
 }
 
 #footer{
+	font-size:10px;
 	clear:both;
-	width:600;
 	text-align:center;
 }
+
+#page{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	
+	width:800px;
+}
+
+
+
 /*set link colors*/
 a:link {color:#171717;}
 a:visited{color:#404040;}

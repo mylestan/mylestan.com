@@ -18,36 +18,34 @@
    </HEAD>
    <BODY>
    <script type="text/javascript">writeText("about")</script>
-		<div id="container" style=width:600>
-			<div id = "title">
-				<h1>Myles Tan</h1>
-			</div>
-			<div id="main">
-				<div id="menu">
-					<div id="icon">
-						<text onclick="writeText('about')">About me</text>
-					</div>
-					<div id="icon">
-						<text onclick="writeText('blog')">Blog</text>
-						<!--<a href="http://www.taniard.tumblr.com" onclick="writeText('blog')" target="_blank">[Blog]</a>-->
-					</div>
-					<div id="icon">
-						<text onclick="writeText('photos')">Photos</text>
-						<!--<a href="http://www.flickr.com/photos/myles_tan" target="_blank">[Photos]</a>-->
-					</div>
-					<div id="icon">
-						<!--<a href="Resume.html" target="_blank">[Resume]</a>-->
-						<text onclick="writeText('resume')">Resume</text>
-					</div>
-					<div id="icon">
-						<!--<a href="mailto:mylestan7@gmail.com">[Contact]</a>-->
-						<text onclick="writeText('contact')">Contact</text>
-					</div>
+		<div id="page">
+			<div id="container" style=width:600>
+				<div id ="title">
+					<h1 onclick="writeText('about')" >Myles Tan</h1>
 				</div>
-				<div id="content"></div>
-			</div>
-			<div id="footer">
-				<text>Work in progress. In case you didn't notice.</text>
+				<div id="main">
+					<div id="menu">
+						<div id="icon">
+							<img src="Images/AboutMe.png" alt="About Me" onclick="writeText('about')"/>
+						</div>
+						<div id="icon">
+							<img src="Images/Blog.png" alt="blog" onclick="writeText('blog')"/>
+						</div>
+						<div id="icon">
+							<img src="Images/Photos.png" alt="blog" onclick="writeText('photos')"/>
+						</div>
+						<div id="icon">
+							<img src="Images/Resume.png" alt="Resume" onclick="writeText('resume')"/>
+						</div>
+						<div id="icon">
+							<img src="Images/Contact.png" alt="Contact" onclick="writeText('contact')"/>
+						</div>
+					</div>
+					<div id="content"></div>
+				</div>
+				<div id="footer">
+					<text>Work in progress. In case you didn't notice.</text>
+				</div>
 			</div>
 		</div>
    </BODY>
