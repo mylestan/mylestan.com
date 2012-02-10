@@ -7,45 +7,52 @@
 		<script type="text/javascript">
 			function writeText(txt){
 				var content;
-				if(txt == 'about')content = "<p>Hey, My name is Myles. I'm an Engineering Student at the University of Waterloo. I'm currently on my co-op term at NexJ Systems Inc.</p><p>This website is one of my pet projects. It's constantly under construction as I get through HTMl, CSS, and java script. I hope to have it updated at least once a week. If you have some time, stop by. Cheers!</p>";
+				if(txt == 'about')content = "<p>Hey, my name is Myles. I'm an Engineering Student at the University of Waterloo. I'm currently on my co-op term at <a href='http://www.nexj.com/' target='_blank'>NexJ Systems Inc.</a>, working on software to <a href='http://www.nexj.com/health/consumer-wellness/' target='_blank'>help make people healthy</a>.</p><p>This website is one of my pet projects. It's constantly under construction as I get through HTML, CSS, and Javascript. I hope to have it updated at least once a week. If you have some time, stop by. Cheers!</p>";
 				if(txt == 'blog')content = "<p>Check out my <a href='http://www.taniard.tumblr.com' target='_blank'>blog</a>. I post thing I like on it.</p>";
 				if(txt == 'photos') content = "<p>I like to take photos! you can find my photos on <a href='http://www.flickr.com/photos/myles_tan' target='_blank'>Flickr.</p>";
 				if(txt == 'resume') content = "<p>If you're interested in hiring me, or a brief list of things I use to validate my self-worth in this economy, you can find it <a href='Resume.html' target='_blank'>here</a>.</p>";
 				if(txt == 'contact') content = "<p>If you'd like to contact me, mylestan7@gmail.com will do the trick.</p>";
 				document.getElementById("content").innerHTML=content;
 			}
+			
+			function highlightIcon(icon){
+				
+			}
 		</script>
    </HEAD>
-   <BODY>
+   <BODY onload="writeText('about')" >
    <script type="text/javascript">writeText("about")</script>
 		<div id="page">
-			<div id="container" style=width:600>
-				<div id ="title">
-					<h1 onclick="writeText('about')" >Myles Tan</h1>
-				</div>
-				<div id="main">
-					<div id="menu">
-						<div id="icon">
-							<img src="Images/AboutMe.png" alt="About Me" onclick="writeText('about')"/>
-						</div>
-						<div id="icon">
-							<img src="Images/Blog.png" alt="blog" onclick="writeText('blog')"/>
-						</div>
-						<div id="icon">
-							<img src="Images/Photos.png" alt="blog" onclick="writeText('photos')"/>
-						</div>
-						<div id="icon">
-							<img src="Images/Resume.png" alt="Resume" onclick="writeText('resume')"/>
-						</div>
-						<div id="icon">
-							<img src="Images/Contact.png" alt="Contact" onclick="writeText('contact')"/>
-						</div>
+			<div id ="header">
+				<text id="title" onclick="writeText('about')">Myles Tan</text>
+			</div>
+			<div id="main">
+				<div id="menu">
+					<div id="icon">
+						<img src="Images/AboutMe.png" alt="About Me" onclick="writeText('about')"/>
 					</div>
-					<div id="content"></div>
+					<div id="icon">
+						<img src="Images/Blog.png" alt="blog" onclick="writeText('blog')"/>
+					</div>
+					<div id="icon">
+						<img src="Images/Photos.png" alt="blog" onclick="writeText('photos')"/>
+					</div>
+					<div id="icon">
+						<img src="Images/Resume.png" alt="Resume" onclick="writeText('resume')"/>
+					</div>
+					<div id="icon">
+						<img src="Images/Contact.png" alt="Contact" onclick="writeText('contact')"/>
+					</div>
+					<div id="socialmedia">
+							<a href="http://www.facebook.com/myles.tan" target="_empty"><img src="Images/Facebook color.png" alt="Facebook"/></a><a
+							href="http://www.twitter.com/tanmyles" target="_empty"><img src="Images/Twitter color.png" alt="Twitter"/></a><a
+							href="http://ca.linkedin.com/in/mylestan" target="_empty"><img src="Images/Linkedin color.png" alt="LinkedIn"/></a>
+					</div>
 				</div>
-				<div id="footer">
-					<text>Work in progress. In case you didn't notice.</text>
-				</div>
+				<div id="content" ></div>
+			</div>
+			<div id="footer">
+				<text>Work in progress :)</text>
 			</div>
 		</div>
    </BODY>

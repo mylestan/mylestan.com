@@ -10,20 +10,34 @@ body {
 	font-size:100%;
 }
 h1{
-	border-bottom:thin solid #181818;
-	font-size:60px;
-	text-transform:uppercase;
 }
 p{
+	margin-bottom:20px;
 }
 div{
 }
 
 /*ID edits*/
+#page{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	width:600px;
+}
+
 #main{
 	margin-top:10px;
 	width:600px;
-	height:500px;
+}
+
+#header{
+	width:600px;
+	/*border-bottom:thin solid #181818;*/
+}
+
+#title{
+	font-size:75px;
+	/*text-transform:uppercase;*/
 }
 
 #menu{
@@ -34,13 +48,30 @@ div{
 
 #icon{
 	height:100px;
+	width:100px;
 	text-align:center;
-	margin-bottom:5px;
+	margin-bottom:0px;
 }
+
+#socialmedia{
+	text-align:right;
+	width:100px;
+	Height:100px;
+	padding:0px;
+	margin:0px;
+}
+
+#socials{
+	height:50px;
+	width:50px;
+	padding:0px;
+	margin:0px;
+}
+	
 
 #content{
 	width:475px;
-	float:right;
+	float:left;
 }
 
 #footer{
@@ -49,17 +80,9 @@ div{
 	text-align:center;
 }
 
-#page{
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:50px;
-	
-	width:800px;
-}
-
 
 
 /*set link colors*/
-a:link {color:#171717;}
-a:visited{color:#404040;}
-
+a:link {text-decoration:none; color:#171717;}
+a:visited{ text-decoration:none; color:#404040;}
+A:hover {color:#ABABAB;}
