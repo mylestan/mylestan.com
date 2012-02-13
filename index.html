@@ -2,8 +2,12 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <HTML>
    <HEAD>
-      <TITLE>Myles Tan</TITLE>
-	  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+		<TITLE>Myles Tan</TITLE>
+		
+		<!-- CSS file -->
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+		
+		<!-- Javascript -->
 		<script type="text/javascript">
 			function writeText(txt){
 				var content;
@@ -14,45 +18,69 @@
 				if(txt == 'contact') content = "<p>If you'd like to contact me, mylestan7@gmail.com will do the trick.</p>";
 				document.getElementById("content").innerHTML=content;
 			}
-			
-			function highlightIcon(icon){
-				
-			}
 		</script>
    </HEAD>
-   <BODY onload="writeText('about')" >
+   <BODY onload="writeText('about')">
    <script type="text/javascript">writeText("about")</script>
-		<div id="page">
-			<div id ="header">
-				<text id="title" onclick="writeText('about')">Myles Tan</text>
-			</div>
-			<div id="main">
-				<div id="menu">
-					<div id="icon">
-						<img src="Images/AboutMe.png" alt="About Me" onclick="writeText('about')"/>
-					</div>
-					<div id="icon">
-						<img src="Images/Blog.png" alt="blog" onclick="writeText('blog')"/>
-					</div>
-					<div id="icon">
-						<img src="Images/Photos.png" alt="blog" onclick="writeText('photos')"/>
-					</div>
-					<div id="icon">
-						<img src="Images/Resume.png" alt="Resume" onclick="writeText('resume')"/>
-					</div>
-					<div id="icon">
-						<img src="Images/Contact.png" alt="Contact" onclick="writeText('contact')"/>
-					</div>
-					<div id="socialmedia">
-							<a href="http://www.facebook.com/myles.tan" target="_empty"><img src="Images/Facebook color.png" alt="Facebook"/></a><a
-							href="http://www.twitter.com/tanmyles" target="_empty"><img src="Images/Twitter color.png" alt="Twitter"/></a><a
-							href="http://ca.linkedin.com/in/mylestan" target="_empty"><img src="Images/Linkedin color.png" alt="LinkedIn"/></a>
-					</div>
+	<!-- jQuery -->
+	<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			//fade for menu icons
+			$('.menuIcon').mouseover(function(){
+				$(this).fadeTo("fast", 0.5);
+			}).mouseout(function(){
+				$(this).fadeTo("fast", 1);
+			});
+			
+			//persistent fade for menu icons
+			$('.menuIcon').click(function(){
+				//stuff
+			});
+			
+			//fade for social icons
+			$('.socialIcon').mouseover(function(){
+				$(this).fadeTo("fast", 0.5);
+			}).mouseout(function(){
+				$(this).fadeTo("fast", 1);
+			});
+		});
+		
+	</script>
+		<div id="window">
+			<div id="toppad"></div>
+			<div id="page">
+				<div id ="header">
+					<text id="title" onclick="writeText('about')">Myles Tan</text>
 				</div>
-				<div id="content" ></div>
-			</div>
-			<div id="footer">
-				<text>Work in progress :)</text>
+				<div id="main">
+					<div id="menu">
+						<div class="menuIcon">
+							<img src="Images/AboutMe.png" alt="About Me" onclick="writeText('about')"/>
+						</div>
+						<div class="menuIcon">
+							<img src="Images/Blog.png" alt="blog" onclick="writeText('blog')"/>
+						</div>
+						<div class="menuIcon">
+							<img src="Images/Photos.png" alt="blog" onclick="writeText('photos')"/>
+						</div>
+						<div class="menuIcon">
+							<img src="Images/Resume.png" alt="Resume" onclick="writeText('resume')"/>
+						</div>
+						<div class="menuIcon">
+							<img src="Images/Contact.png" alt="Contact" onclick="writeText('contact')"/>
+						</div>
+						<div id="socialmedia">
+								<a class="socialIcon" href="http://www.facebook.com/myles.tan" target="_empty"><img src="Images/Facebook color.png" alt="Facebook"/></a><a
+								class="socialIcon" href="http://www.twitter.com/tanmyles" target="_empty"><img src="Images/Twitter color.png" alt="Twitter"/></a><a
+								class="socialIcon" href="http://ca.linkedin.com/in/mylestan" target="_empty"><img src="Images/Linkedin color.png" alt="LinkedIn"/></a>
+						</div>
+					</div>
+					<div id="content" ></div>
+				</div>
+				<div id="footer">
+					<text>Work in progress :)</text>
+				</div>
 			</div>
 		</div>
    </BODY>

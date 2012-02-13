@@ -17,12 +17,35 @@ p{
 div{
 }
 
+/*Class edits*/
+.menuIcon{
+	height:100px;
+	width:100px;
+	text-align:center;
+	margin-bottom:0px;
+}
+
+.socialIcon{}
+
 /*ID edits*/
+
+#window{
+	/*background: #FFFFFF; /* for non-css3 browsers */
+	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E5E5', endColorstr='#FFFFFF'); /* for IE */
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#E5E5E5), to(#FFFFFF)); /* for webkit browsers */
+	/*background: -moz-linear-gradient(top,  #E5E5E5,  #FFFFFF); /* for firefox 3.6+ */ 
+}
+
+#toppad{
+	height:50px;
+}
+
 #page{
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:50px;
 	width:600px;
+	
+	/*background-color:#ffffff;*/
 }
 
 #main{
@@ -44,13 +67,6 @@ div{
 	margin-right:25px;
 	float:left;
 	width:100px;
-}
-
-#icon{
-	height:100px;
-	width:100px;
-	text-align:center;
-	margin-bottom:0px;
 }
 
 #socialmedia{
