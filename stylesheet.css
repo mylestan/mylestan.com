@@ -36,10 +36,6 @@ div{
 	/*background: -moz-linear-gradient(top,  #E5E5E5,  #FFFFFF); /* for firefox 3.6+ */ 
 }
 
-#toppad{
-	height:50px;
-}
-
 #page{
 	margin-left:auto;
 	margin-right:auto;
@@ -51,6 +47,10 @@ div{
 #main{
 	margin-top:10px;
 	width:600px;
+}
+
+#headpaddingstrip{
+	height:50px;
 }
 
 #header{
@@ -94,6 +94,10 @@ div{
 	font-size:10px;
 	clear:both;
 	text-align:center;
+}
+
+#footpaddingstrip{
+	height:50px;
 }
 
 
