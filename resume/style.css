@@ -14,7 +14,7 @@ p strong{
 	text-align: left;
 }
 h1{
-	font-size: 75px;
+	font-size: 60px;
 	color: #333333;
 	text-transform: uppercase;
 	float: left;
@@ -23,7 +23,7 @@ h1{
 h2{
 	margin: 0px;
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 20px;
 	color: #CCCCCC;
 	font-weight: normal;
 	float: left;
@@ -31,7 +31,7 @@ h2{
 h3{
 	float: left;
 	margin: 0px;
-	font-size: 22px;
+	font-size: 16px;
 	color: #555555;
 }
 h3 strong{
@@ -53,7 +53,7 @@ ul{
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px;
+	width: 600px;
 }
 #header{
 	margin: 0px;
@@ -72,9 +72,9 @@ ul{
 .item{
 	overflow: auto;
 	float: right;
-	width: 680px;
+	width: 600px;
 	margin-top: 3px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .item p{
 	width: 600px;
@@ -85,9 +85,9 @@ ul{
 
 /* Contact section stuff */
 #contact{
-	padding-top: 25px;
+	padding-top: 17px;
 	float: right;
-	width: 300px;
+	width: 200px;
 }
 #contact ul{
 	padding: 0px;
@@ -109,13 +109,14 @@ ul{
 	float: left;
 	padding: 0px;
 	margin: 0px;
+	width: 600px;
 }
 #highlights li{
 	margin-bottom: 5px;
 	color: #333333;
 }
 #highlights li strong{
-	font-size: 14px;
+	/*font-size: 14px;*/
 	color: #003300;
 }
 

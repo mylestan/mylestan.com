@@ -3,7 +3,7 @@ body, div, body, h1, p {
 	font-family: Georgia, Georgia, serif;
 	padding:0px;
 	margin:0px;
-	font-size:12px;
+	font-size:16px;
 }
 
 /*class edits*/
@@ -73,7 +73,7 @@ div{
 #socialmedia{
 	text-align:right;
 	width:100px;
-	Height:100px;
+	height:100px;
 	padding:0px;
 	margin:0px;
 }
@@ -89,6 +89,7 @@ div{
 #content{
 	width:475px;
 	float:left;
+	text-align: justify;
 }
 
 #footer{
@@ -104,6 +105,6 @@ div{
 
 
 /*set link colors*/
-a:link {text-decoration:none; color:#171717;}
+a:link {text-decoration:none; color:#888888;}
 a:visited{ text-decoration:none; color:#404040;}
-A:hover {color:#ABABAB;}
+a:hover {color:#ABABAB;}
