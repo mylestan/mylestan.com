@@ -71,7 +71,6 @@ ul{
 }
 .item{
 	overflow: auto;
-	float: right;
 	width: 600px;
 	margin-top: 3px;
 	margin-bottom: 10px;
