@@ -2,6 +2,7 @@
 body{
 	font-size: 12;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin: 0px;
 }
 p{
 	float: left;
@@ -41,7 +42,7 @@ h4{
 	margin: 0px;
 	float: right;
 	font-weight: normal;
-	color: #003300;
+	color: #000000;
 	margin-top: 5px;
 }
 ul{
@@ -56,6 +57,7 @@ ul{
 	width: 600px;
 }
 #header{
+	width: 600px;
 	margin: 0px;
 	margin-top: 20px;
 	overflow: auto;
@@ -80,6 +82,20 @@ ul{
 }
 .item ul{
 	width: 560px;
+}
+
+/*Cover Letter stuff*/
+#cover-letter{
+	page-break-after: always;
+}
+#cover-letter p{
+	color: #000000;
+	margin-bottom: 20px;
+	width: 600px;
+}
+#cover-letter p strong{
+	font-weight: normal;
+	text-indent: 20px;
 }
 
 /* Contact section stuff */
@@ -121,7 +137,7 @@ ul{
 
 /* Education section stuff */
 #education p strong{
-	font-size: 16px;
+	font-size: 14px;
 }
 
 /* Experience section stuff */
@@ -134,6 +150,7 @@ ul{
 /* project section stuff */
 #projects p{
 	color: #333333;
+	text-align: justify;
 }
 
 /* Interests section stuff */
