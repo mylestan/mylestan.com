@@ -107,7 +107,7 @@ a.open-item{
 	cursor: pointer;
 	color: #999;
 
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 
@@ -143,7 +143,7 @@ div.active{
 
 div.page-item p{
 	margin-top: 0px;
-	margin-left: 5px;
+	margin-left: 7px;
 }
 
 /* For Individual pages */
