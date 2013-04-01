@@ -1,0 +1,197 @@
+body{
+	font-family: Century Gothic, sans-serif;
+	color: #333;
+}
+
+/* Defaults */
+
+h1{
+	font-weight: normal;
+	font-size: 200%;
+	cursor: pointer;
+}
+
+h1 a:link{
+	text-decoration: none;
+	color: #000;
+}
+
+h1 a:active{
+	text-decoration: none;
+	color: #444;
+}
+
+h1 a:visited{
+	text-decoration: none;
+	color: #000;
+}
+
+h3 {
+	margin-top: 0px;
+	font-size: 100%;
+	font-style: bold;
+}
+
+h4 {
+	font-size: 100%;
+	font-weight: normal;
+
+}
+
+h5 {
+	font-size: 100%;
+	font-weight: normal;
+	margin-top: 0px;
+}
+
+/* Page */
+
+div#page{
+	width: 900px;
+	min-height: 500px;
+	margin: 50px auto;
+}
+
+/* Header */
+
+div#head{
+
+}
+
+div#name{
+	width: 20%;
+	float: left;
+}
+
+div#head-line{
+	width: 80%;
+	height: 1px;
+
+	float: left;
+	margin: 40px 0px;
+
+	background-color: #333;
+}
+
+/* Navigation Bar */
+
+.nav-fade{
+	transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-webkit-transition: color .25s ease-in-out;
+}
+
+.nav-fade:hover{
+	color: #000;
+}
+
+div#nav-bar{
+	width: 20%;
+	float: left;
+}
+
+p.nav-item{
+	margin: 0px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	color: #999;
+}
+
+p.active{
+	color: #000;
+}
+
+a.open-item{
+	margin: 0px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	color: #999;
+
+	text-decoration: none;
+}
+
+
+/* Pages and Content */
+
+.page-fade{
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+div#content{
+	width: 80%;
+	float: left;
+}
+
+div#content a{
+	color: #999;
+	text-decoration: none;
+}
+
+div#content a:hover{
+	color: #CCC;
+}
+
+div.page-item{
+	display: none;
+}
+
+div.active{
+	display: block;
+}
+
+div.page-item p{
+	margin-top: 0px;
+	margin-left: 5px;
+}
+
+/* For Individual pages */
+
+div#contact-left{
+	width: 20%;
+	float: left;
+}
+
+div#contact-right{
+	width: 80%;
+	float: left;
+	text-align: left;
+}
+
+div#contact-right strong{
+	font-weight: normal;
+	text-decoration: line-through;
+}
+
+/* Footer */
+
+div#footer{
+	width: 900px;
+	margin: 10px auto;
+}
+
+div#footer-left{
+	width: 20%;
+	float: left;
+}
+
+div#footer-left p{
+	margin: 0px;
+}
+
+div#footer-line{
+	width: 80%;
+	height: 1px;
+
+	float: left;
+	margin: 9px 0px;
+
+	background-color: #333;
+}
+
+/* Utility*/
+
+div.clear{
+	clear: both;
+}
