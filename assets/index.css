@@ -46,10 +46,16 @@ h5 {
 
 /* Page */
 
-div#page{
+div#main{
 	width: 900px;
 	min-height: 500px;
 	margin: 50px auto;
+}
+
+.main-fade{
+	transition: height .25s ease-in-out;
+	-moz-transition: height .25s ease-in-out;
+	-webkit-transition: height .25s ease-in-out;
 }
 
 /* Header */
@@ -135,10 +141,17 @@ div#content a:hover{
 
 div.page-item{
 	display: none;
+	opacity: 0;
 }
 
 div.active{
 	display: block;
+	opacity: 1;
+}
+
+div.transition{
+	display: block;
+	opacity: 0;
 }
 
 div.page-item p{
