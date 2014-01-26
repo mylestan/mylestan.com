@@ -163,12 +163,14 @@ div.page-item p{
 /* For Individual pages */
 
 div#contact-left{
+	margin-top: 20px;
 	width: 20%;
 	float: left;
 }
 
 div#contact-right{
-	width: 80%;
+	margin-top: 20px;
+	width: 30%;
 	float: left;
 	text-align: left;
 }
@@ -176,6 +178,16 @@ div#contact-right{
 div#contact-right strong{
 	font-weight: normal;
 	text-decoration: line-through;
+}
+
+div.portrait{
+	width: 50%;
+	float: right;
+}
+
+img#portrait{
+	float:right;
+	margin: 0px 20px 0px 20px;
 }
 
 /* Footer */
